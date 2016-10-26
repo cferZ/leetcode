@@ -7,14 +7,14 @@ public class ProductofArrayExceptSelf_238 {
         int product=1;
 
     	for(int i=0;i<nums.length;i++){
-System.out.println(product);
+
     		int tem=nums[i];
         	product_pre[i]=product;
         	product*=tem;
         }
     	product=1;
     	for(int i=0;i<nums.length;i++){
-    		System.out.println(product);
+
     		int tem=nums[nums.length-1-i];
         	product_pro[nums.length-1-i]=product;
         	product*=tem;
